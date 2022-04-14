@@ -1,0 +1,487 @@
+/*fonts css start*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap');
+@font-face {
+    font-family: 'Trajan Pro 3';
+    src: url('../fonts/TrajanPro3-Semibold.eot');
+    src: url('../fonts/TrajanPro3-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TrajanPro3-Semibold.woff2') format('woff2'),
+        url('../fonts/TrajanPro3-Semibold.woff') format('woff'),
+        url('../fonts/TrajanPro3-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Yu Mincho';
+    src: url('YuMincho-Demibold.eot');
+    src: url('YuMincho-Demibold.eot?#iefix') format('embedded-opentype'),
+        url('YuMincho-Demibold.woff2') format('woff2'),
+        url('YuMincho-Demibold.woff') format('woff'),
+        url('YuMincho-Demibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+/*fonts css end*/
+/*
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Noto Serif JP', serif;
+font-family: 'Trajan Pro 3'; font-weight: 600;
+font-family: 'Yu Mincho'; font-weight: 600;
+*/
+
+
+/*common css start*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body, h1, h2, h3, h4, h5, h6, ul, li, p, a, span{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -font-smoothing: antialiased;
+    font-family: 'Noto Serif JP', serif;
+}
+body.no_scroll {
+    overflow: hidden;
+}
+a, button, input[type=submit], select{
+    cursor: pointer;
+}
+a, a:hover, a:focus,
+button, button:hover, button:focus,
+input, input:hover, input:focus,
+textarea, textarea:hover, textarea:focus,
+select, select:hover, select:focus{
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.cpc {
+    display: block !important;
+}
+.csp {
+    display: none !important;
+}
+@media (max-width: 900px){
+    .cpc{
+        display: none !important;
+    }
+    .csp{
+        display: block !important;
+    }
+}
+/*common css end*/
+
+/*page pre-loader css start*/
+.loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    pointer-events: none;
+    background-color: #fff;
+}
+.loader-wrapper .loader {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: auto;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid rgba(62, 174, 230, 0.2);
+    border-right: 3px solid rgba(62, 174, 230, 0.2);
+    border-bottom: 3px solid rgba(62, 174, 230, 0.2);
+    border-left: 3px solid rgba(62, 174, 230, 0.8);
+    -webkit-animation: loaderSpin 1.5s infinite linear;
+    animation: loaderSpin 1.5s infinite linear;
+}
+@-webkit-keyframes loaderSpin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes loaderSpin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/*page pre-loader css end*/
+
+/*animations css start*/
+.io {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, -webkit-transform 1.0s ease 0s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, transform 1.0s ease 0s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: opacity, transform;
+}
+.io.move {
+    opacity: 1 !important;
+    -webkit-transform: translate3d(0, 0, 0) scale(1) rotate(0deg) !important;
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg) !important;
+}
+.io.fade {
+    opacity: 0;
+}
+.io.lr {
+    -webkit-transform: translate3d(-80px, 0, 0);
+    transform: translate3d(-80px, 0, 0);
+}
+.io.rl {
+    -webkit-transform: translate3d(80px, 0, 0);
+    transform: translate3d(80px, 0, 0);
+}
+.io.upL {
+    -webkit-transform: translate3d(0, 80px, 0);
+    transform: translate3d(0, 80px, 0);
+}
+.io.upS {
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+.io.downL {
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+}
+.io.downS {
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+}
+.io.scaleUp {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.io.scaleDown {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.io.rotateL {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.io.rotateR {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+.io.delay.delay1 {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, -webkit-transform 1.0s ease 0s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, transform 1.0s ease 0s;
+}
+.io.delay.delay2 {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.23s, -webkit-transform 1.0s ease 0.23s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.23s, transform 1.0s ease 0.23s;
+}
+.io.delay.delay3 {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.46s, -webkit-transform 1.0s ease 0.46s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.46s, transform 1.0s ease 0.46s;
+}
+.io.delay.delay4 {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.69s, -webkit-transform 1.0s ease 0.69s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.69s, transform 1.0s ease 0.69s;
+}
+.io.delay a {
+    -webkit-transition: none;
+    transition: none;
+}
+.io.delay .delay_child {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, -webkit-transform 1.0s ease 0.5s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, transform 1.0s ease 0.5s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: opacity, transform;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+.io.delay.delay1 .delay_child {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, -webkit-transform 1.0s ease 0.5s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, transform 1.0s ease 0.5s;
+}
+.io.delay.delay2 .delay_child {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.73s, -webkit-transform 1.0s ease 0.73s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.73s, transform 1.0s ease 0.73s;
+}
+.io.delay.delay3 .delay_child {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.96s, -webkit-transform 1.0s ease 0.96s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.96s, transform 1.0s ease 0.96s;
+}
+.io.delay.delay4 .delay_child {
+    -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 1.19s, -webkit-transform 1.0s ease 1.19s;
+    transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 1.19s, transform 1.0s ease 1.19s;
+}
+.io.delay.move .delay_child {
+    opacity: 1 !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+@media (max-width: 900px) {
+    .io.delay.delay1 {
+        -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, -webkit-transform 1.0s ease 0s;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, transform 1.0s ease 0s;
+    }
+    .io.delay.delay2 {
+        -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, -webkit-transform 1.0s ease 0s;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, transform 1.0s ease 0s;
+    }
+    .io.delay.delay3 {
+        -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, -webkit-transform 1.0s ease 0s;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, transform 1.0s ease 0s;
+    }
+    .io.delay.delay4 {
+        -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, -webkit-transform 1.0s ease 0s;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0s, transform 1.0s ease 0s;
+    }
+    .io.delay .delay_child {
+        -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, -webkit-transform 1.0s ease 0.5s;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, transform 1.0s ease 0.5s;
+    }
+    .io.delay.delay1 .delay_child {
+        -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, -webkit-transform 1.0s ease 0.5s;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, transform 1.0s ease 0.5s;
+    }
+    .io.delay.delay2 .delay_child {
+        -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, -webkit-transform 1.0s ease 0.5s;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, transform 1.0s ease 0.5s;
+    }
+    .io.delay.delay3 .delay_child {
+        -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, -webkit-transform 1.0s ease 0.5s;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, transform 1.0s ease 0.5s;
+    }
+    .io.delay.delay4 .delay_child {
+        -webkit-transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, -webkit-transform 1.0s ease 0.5s;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, opacity 1.0s ease 0.5s, transform 1.0s ease 0.5s;
+    }
+}
+/*animations css end*/
+
+/* custom grid css start */
+.custom_container_fluid{
+    width: 100%;
+    padding: 0 15px;
+}
+.custom_container{
+    width: 100%;
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: auto;
+}
+.custom_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.custom_col_12{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+.custom_col_6{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+.custom_col_4{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+}
+.custom_col_3{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+}
+/* custom grid css end */
+
+/*header section css start*/
+.navbar_toggler {
+    padding: 0;
+    height: 35px;
+    width: 35px;
+    border: none;
+    outline: none !important;
+    background-color: transparent;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 15px;
+    z-index: 9999;
+}
+.navbar_toggler .navbar_toggler_inner,
+.navbar_toggler .navbar_toggler_inner:after,
+.navbar_toggler .navbar_toggler_inner:before {
+    width: 35px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #ed6d00;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.navbar_toggler .navbar_toggler_inner{
+    transition: top 75ms ease 0.12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.navbar_toggler .navbar_toggler_inner:after,
+.navbar_toggler .navbar_toggler_inner:before {
+    display: block;
+    content: "";
+}
+.navbar_toggler .navbar_toggler_inner:before {
+    transition: top 75ms ease 0.12s,opacity 75ms ease;
+    top: -12px;
+}
+.navbar_toggler .navbar_toggler_inner:after {
+    transition: bottom 75ms ease 0.12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+    bottom: -12px;
+}
+.navbar_toggler.open_menu .navbar_toggler_inner {
+    transition: top 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) 0.12s;
+    transform: rotate(45deg);
+    top: 0;
+}
+.navbar_toggler.open_menu .navbar_toggler_inner:before {
+    top: 0;
+    transition: top 75ms ease,opacity 75ms ease 0.12s;
+    opacity: 0;
+}
+.navbar_toggler.open_menu .navbar_toggler_inner:after {
+    bottom: 0;
+    transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) 0.12s;
+    transform: rotate(-90deg);
+}
+/*header section css end*/
+
+/* footer css start */
+.site_footer{
+    width: 100%;
+    background-color: #484848;
+    padding: 30px 0;
+}
+.site_footer p{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+/* footer css end */
+
+/* about clinic css start */
+.sketch_heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sketch_heading h2{
+    position: relative;
+    display: inline-block;
+    color: #484848;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.sketch_heading h2 span{
+    color: #69B8DB;
+    font-size: 50px;
+}
+.sketch_heading h2:before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    right: 0;
+    bottom: 0;
+    width: 467px;
+    height: 52px;
+    opacity: 0.39;
+    background-image: url('../images/sketch_heading_bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.king_heading{
+    position: relative;
+    display: table;
+    margin: auto;
+    text-align: center;
+}
+.king_heading h6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 0);
+    color: #484848;
+    font-size: 20px;
+    font-family: 'Yu Mincho';
+    font-weight: 600;
+    line-height: 1;
+}
+.king_heading h4{
+    color: #484848;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.king_heading h2{
+    color: #BCA982;
+    font-size: 80px;
+    font-family: 'Yu Mincho';
+    font-weight: 600;
+}
+
+
+.about_clinic_wrapper{
+    position: relative;
+    width: 100%;
+}
+.about_clinic_wrapper img{
+    margin-left: auto;
+}
+.about_clinic_wrapper p{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: #484848;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2;
+}
+/* about clinic css end */
