@@ -1,0 +1,19 @@
+/*header css start*/
+.site_header {
+    position: relative;
+}
+.site_header .custom_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.custom_navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.custom_navbar ul li:not(:first-child) {
+    margin-left: 20px;
+}
+/*header css end*/
