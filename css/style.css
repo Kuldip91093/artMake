@@ -387,6 +387,26 @@ img{
 }
 /*header section css end*/
 
+/*header css start*/
+.site_header {
+    position: relative;
+}
+.site_header .custom_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.custom_navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.custom_navbar ul li:not(:first-child) {
+    margin-left: 20px;
+}
+/*header css end*/
+
 /* footer css start */
 .site_footer{
     width: 100%;
@@ -402,86 +422,3 @@ img{
 }
 /* footer css end */
 
-/* about clinic css start */
-.sketch_heading{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.sketch_heading h2{
-    position: relative;
-    display: inline-block;
-    color: #484848;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 1.6;
-}
-.sketch_heading h2 span{
-    color: #69B8DB;
-    font-size: 50px;
-}
-.sketch_heading h2:before{
-    content: '';
-    position: absolute;
-    top: 50px;
-    left: -50px;
-    right: 0;
-    bottom: 0;
-    width: 467px;
-    height: 52px;
-    opacity: 0.39;
-    background-image: url('../images/sketch_heading_bg.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.king_heading{
-    position: relative;
-    display: table;
-    margin: auto;
-    text-align: center;
-}
-.king_heading h6{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-100%, 0);
-    color: #484848;
-    font-size: 20px;
-    font-family: 'Yu Mincho';
-    font-weight: 600;
-    line-height: 1;
-}
-.king_heading h4{
-    color: #484848;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.3;
-}
-.king_heading h2{
-    color: #BCA982;
-    font-size: 80px;
-    font-family: 'Yu Mincho';
-    font-weight: 600;
-}
-
-
-.about_clinic_wrapper{
-    position: relative;
-    width: 100%;
-}
-.about_clinic_wrapper img{
-    margin-left: auto;
-}
-.about_clinic_wrapper p{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    left: 0;
-    right: 0;
-    width: 100%;
-    color: #484848;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 2;
-}
-/* about clinic css end */
