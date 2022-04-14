@@ -1,4 +1,4 @@
-/* about clinic css start */
+/* king heading css start */
 .sketch_heading{
     width: 100%;
     text-align: center;
@@ -12,19 +12,22 @@
     font-weight: 700;
     line-height: 1.6;
 }
-.sketch_heading h2 span{
-    color: #69B8DB;
+.sketch_heading h2 .lg_font{
     font-size: 50px;
 }
-.sketch_heading h2:before{
+.sketch_heading h2 .blue_color{
+    position: relative;
+    color: #69B8DB;
+}
+.sketch_heading h2 .blue_color:before{
     content: '';
     position: absolute;
-    top: 50px;
-    left: -50px;
+    top: 70%;
+    left: 4%;
     right: 0;
     bottom: 0;
-    width: 467px;
-    height: 52px;
+    width: 100%;
+    height: 100%;
     opacity: 0.39;
     background-image: url('../images/sketch_heading_bg.png');
     background-repeat: no-repeat;
@@ -39,13 +42,29 @@
 .king_heading h6{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 80px;
     transform: translate(-100%, 0);
     color: #484848;
     font-size: 20px;
     font-family: 'Yu Mincho';
     font-weight: 600;
     line-height: 1;
+    z-index: 1;
+}
+.king_heading h6 span{
+    display: block;
+    transform: rotate(-22deg);
+}
+.king_heading h6:before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: -10px;
+    width: 97px;
+    height: 48px;
+    background-image: url('../images/small_heading_bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .king_heading h4{
     color: #484848;
@@ -54,13 +73,80 @@
     line-height: 1.3;
 }
 .king_heading h2{
+    position: relative;
     color: #BCA982;
     font-size: 80px;
     font-family: 'Yu Mincho';
     font-weight: 600;
+    line-height: 1.3;
 }
+.king_heading h2 .blue_font{
+    color: #70B6CF;
+    font-size: 70px;
+}
+.king_heading h2 .md_font{
+    font-size: 40px;
+}
+.king_heading h2 .sm_font{
+    font-size: 20px;
+}
+.king_heading h2 .text_shadow_font{
+    text-shadow: 4px 2px 0 #cfcfcf;
+}
+.king_heading h2:before,
+.king_heading h2:after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 2px;
+    height: 50px;
+    background-color: #484848;
+    transform-origin: bottom;
+}
+.king_heading h2:before{
+    left: -50px;
+    transform: rotate(-40deg);
+}
+.king_heading h2:after{
+    right: -50px;
+    transform: rotate(40deg);
+}
+.king_heading .bttn{
+    display: inline-block;
+    background-color: #72C9D8;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 37px 73px;
+    margin-top: 10px;
+}
+.king_heading .bttn .fa{
+    margin-left: 50px;
+}
+/* king heading css end */
+/* regular heading css start */
+.regular_heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.regular_heading h2{
+    color: #484848;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+.regular_heading h6{
+    color: #70B6CF;
+    font-size: 20px;
+    font-family: 'Trajan Pro 3';
+    font-weight: 600;
+}
+/* regular heading css end */
 
-
+/* about clinic css start */
 .about_clinic_wrapper{
     position: relative;
     width: 100%;
@@ -80,4 +166,30 @@
     font-weight: 700;
     line-height: 2;
 }
+.about_clinic_section .king_heading_wrapper{
+    padding: 100px 0 85px;
+}
 /* about clinic css end */
+
+/* about section css start */
+.about_section{
+    padding: 60px 0 30px;
+}
+.about_section .para{
+    margin-bottom: 20px;
+}
+.about_section .para p{
+    color: #484848;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+}
+.about_section .img{
+    background-color: #FFFFFF;
+    padding: 35px 15px 17px;
+    margin-bottom: 20px;
+}
+.about_section .img img{
+    margin: auto;
+}
+/* about section css end */
