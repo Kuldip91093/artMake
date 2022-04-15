@@ -4,9 +4,9 @@
     font-family: 'Trajan Pro 3';
     src: url('../fonts/TrajanPro3-Semibold.eot');
     src: url('../fonts/TrajanPro3-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TrajanPro3-Semibold.woff2') format('woff2'),
-        url('../fonts/TrajanPro3-Semibold.woff') format('woff'),
-        url('../fonts/TrajanPro3-Semibold.ttf') format('truetype');
+    url('../fonts/TrajanPro3-Semibold.woff2') format('woff2'),
+    url('../fonts/TrajanPro3-Semibold.woff') format('woff'),
+    url('../fonts/TrajanPro3-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -15,9 +15,9 @@
     font-family: 'Yu Mincho';
     src: url('YuMincho-Demibold.eot');
     src: url('YuMincho-Demibold.eot?#iefix') format('embedded-opentype'),
-        url('YuMincho-Demibold.woff2') format('woff2'),
-        url('YuMincho-Demibold.woff') format('woff'),
-        url('YuMincho-Demibold.ttf') format('truetype');
+    url('YuMincho-Demibold.woff2') format('woff2'),
+    url('YuMincho-Demibold.woff') format('woff'),
+    url('YuMincho-Demibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -322,6 +322,65 @@ img{
 /* custom grid css end */
 
 /*header section css start*/
+.site_header {
+    position: relative;
+    padding: 15px 0;
+}
+.site_header .custom_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.custom_navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.custom_navbar ul li:not(:first-child) {
+    margin-left: 30px;
+}
+.custom_navbar ul li a {
+    color: #484848;
+    font-size: 14px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    display: block;
+}
+.custom_navbar ul li a span {
+    display: block;
+    color: #484848;
+    font-size: 14px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.custom_navbar ul li a.number_link {
+    color: #69B8DB;
+    font-weight: 900;
+    font-size: 24px;
+}
+.custom_navbar ul li a.number_link i {
+    font-size: 21px;
+    margin-right: 8px;
+}
+.custom_navbar ul li a.contact_btn {
+    width: 165px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background: rgb(114,201,216);
+    background: -moz-linear-gradient(90deg, rgba(114,201,216,1) 0%, rgba(83,177,204,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(114,201,216,1) 0%, rgba(83,177,204,1) 100%);
+    background: linear-gradient(90deg, rgba(114,201,216,1) 0%, rgba(83,177,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72c9d8",endColorstr="#53b1cc",GradientType=1);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.custom_navbar ul li a.contact_btn i {
+    margin-right: 10px;
+}
 .navbar_toggler {
     padding: 0;
     height: 35px;
@@ -346,7 +405,7 @@ img{
     transition-duration: 0.3s;
     transition-property: transform;
     border-radius: 4px;
-    background-color: #ed6d00;
+    background-color: rgb(114,201,216);
     position: absolute;
     left: 0;
     right: 0;
@@ -387,26 +446,6 @@ img{
 }
 /*header section css end*/
 
-/*header css start*/
-.site_header {
-    position: relative;
-}
-.site_header .custom_container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.custom_navbar ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.custom_navbar ul li:not(:first-child) {
-    margin-left: 20px;
-}
-/*header css end*/
-
 /* footer css start */
 .site_footer{
     width: 100%;
@@ -422,3 +461,189 @@ img{
 }
 /* footer css end */
 
+/*banner section css start*/
+.banner_section {
+    background-image: url('../images/site-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0 20px;
+}
+.banner_content {
+    display: table;
+}
+.banner_content h2 {
+    display: table;
+    margin: auto;
+    background-image: url(../images/banner_text_image.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 12px 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.banner_content h3 {
+    display: table;
+    margin: 15px auto 0;
+    background-image: url(../images/banner_text_image.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 12px 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.banner_content h1 {
+    color: #606a6b;
+    font-size: 80px;
+    font-weight: 700;
+    margin: 20px 0 0;
+}
+.banner_content h1 span {
+    font-size: 90px;
+}
+/*banner section css end*/
+
+/*problem section css start*/
+.problem_section {
+    background-image: url(../images/problem_bg_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 55px 0 75px;
+}
+.problem_section h2 {
+    display: table;
+    margin: auto;
+    font-size: 38px;
+    font-weight: 700;
+    color: #484848;
+    position: relative;
+    padding: 0 60px;
+}
+.problem_section h2:before {
+    content: '/';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: 700;
+    margin: auto;
+    line-height: 1;
+}
+.problem_section h2:after {
+    content: '/';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: 700;
+    margin: auto;
+    line-height: 1;
+    transform: rotate(327deg);
+}
+.problem_section h2 span {
+    font-size: 42px;
+}
+.problem_contnet_sec {
+    position: relative;
+    max-width: 987px;
+    margin: auto;
+}
+.problem_contnet_image {
+    display: table;
+    margin: auto;
+    padding-top: 150px;
+}
+.problem_contnet_text .problem_contnet_text_inner {
+    display: table;
+    background-image: url('../images/problem_image_3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.problem_contnet_text .problem_contnet_text_inner p {
+    font-size: 20px;
+    color: #484848;
+    line-height: 24px;
+    font-weight: 500;
+}
+.problem_contnet_text_inner.problem_contnet_text_first {
+    padding: 70px 60px 82px 65px;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+}
+.problem_contnet_text_inner.problem_contnet_text_first p {
+    transform: rotate(349deg);
+}
+.problem_contnet_text_inner.problem_contnet_text_second {
+    padding: 60px 50px 65px 50px;
+    position: absolute;
+    top: 28px;
+    left: 230px;
+}
+.problem_contnet_text_inner.problem_contnet_text_second p {
+    transform: rotate(353deg);
+}
+.problem_contnet_text_inner.problem_contnet_text_third {
+    padding: 58px 52px 72px 53px;
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    transform: rotate(22deg);
+}
+.problem_contnet_text_inner.problem_contnet_text_third p {
+    transform: rotate(353deg);
+}
+.problem_contnet_text_inner.problem_contnet_text_forth {
+    padding: 60px 60px 73px 60px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    transform: rotate(16deg);
+}
+.problem_contnet_text_inner.problem_contnet_text_forth p {
+    transform: rotate(354deg);
+}
+.problem_contnet_text.problem_contnet_text_slider .problem_contnet_text_inner {
+    position: unset !important;
+    transform: rotate(0deg);
+    margin: auto;
+}
+/*problem section css end*/
+
+@media(max-width: 900px) {
+    .site_header a img {
+        max-width: 190px;
+    }
+    nav.custom_navbar {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        right: -100%;
+        bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        transition: all 0.4s;
+    }
+    nav.custom_navbar.navbar_animate {
+        left: 0;
+        right: 0;
+    }
+    .custom_navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .custom_navbar ul li {
+        margin: 10px 0 !important;
+    }
+}
