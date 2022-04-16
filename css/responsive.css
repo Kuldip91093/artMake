@@ -185,8 +185,22 @@
 
 /* about section css start */
 .about_section{
+    position: relative;
     padding: 60px 0 30px;
-    background-color: skyblue;
+    z-index: 1;
+}
+.about_section:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 120%;
+    background-image: url('../images/about_section_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 .about_section .para{
     margin-bottom: 20px;
@@ -265,7 +279,9 @@
     right: 0;
     width: 100%;
     height: 68%;
-    background-color: skyblue;
+    background-image: url('../images/golden_point_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
 }
 .golden_ration_points .head{
@@ -379,6 +395,7 @@
 .menu_section{
     width: 100%;
     background-color: #EDF3F5;
+    padding: 54px 0 42px;
 }
 .menu_section_head{
     position: relative;
@@ -415,10 +432,13 @@
 }
 .menu_section_layer .col_img{
     position: relative;
-    width: 55%;
+    width: 50%;
     background-color: #FCE1CC;
     z-index: 2;
     transform: translate(0, -50px);
+}
+.menu_section_layer .col_img.bg_none{
+    background: none;
 }
 .menu_section_layer .col_img .tag{
     position: absolute;
@@ -445,6 +465,9 @@
 .menu_section_layer .img img{
     margin: auto;
 }
+.menu_section_layer .col_img.bg_none .img img{
+    width: 100%;
+}
 .menu_section_layer .img_text{
     position: absolute;
     bottom: 0;
@@ -463,7 +486,7 @@
 }
 .menu_section_layer .col_cont{
     position: relative;
-    width: 45%;
+    width: 50%;
     z-index: 1;
     padding: 30px;
 }
@@ -601,3 +624,229 @@
     line-height: 2.2;
 }
 /* stepper_section css end */
+
+/* safe_secure_section css start */
+.safe_secure_section{
+    width: 100%;
+    padding: 73px 0;
+}
+.safe_secure_section .king_heading_wrapper{
+    margin-bottom: 87px;
+}
+.safe_secure_glry{
+    background-image: url('../images/safe_secure_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.safe_secure_img img{
+    margin: auto;
+}
+.safe_secure_para{
+    width: 100%;
+    margin-top: 30px;
+}
+.safe_secure_para p{
+    text-align: center;
+    color: #484848;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 500;
+    margin-bottom: 38px;
+}
+/* safe_secure_section css end */
+
+/* faq_section css start */
+.faq_section{
+    width: 100%;
+    padding: 50px 0 129px;
+}
+.faq_content{
+    width: 100%;
+    max-width: 876px;
+    margin: auto;
+}
+.faq_content .accordion-jquery-ui{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+.faq_content .accordion-jquery-ui .ui-icon{
+    display: none;
+}
+.faq_content .accordion-jquery-ui .question{
+    color: #484848;
+    font-size: 18px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #CECECE;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+.faq_content .accordion-jquery-ui .answer{
+    color: #484848;
+    font-size: 16px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+    line-height: 2.2;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #CECECE;
+}
+.faq_content .accordion-jquery-ui .question,
+.faq_content .accordion-jquery-ui .answer{
+    position: relative;
+    padding-left: 96px;
+    padding-right: 96px;
+    margin: 0;
+}
+.faq_content .accordion-jquery-ui .question:before{
+    content: 'Q.';
+    top: 28px;
+    color: #70B6CF;
+}
+.faq_content .accordion-jquery-ui .answer:before{
+    content: 'A.';
+    top: 17px;
+    color: #484848;
+    opacity: 0.40;
+}
+.faq_content .accordion-jquery-ui .question:before,
+.faq_content .accordion-jquery-ui .answer:before{
+    position: absolute;
+    left: 30px;
+    font-size: 30px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+    line-height: 1;
+}
+.faq_content .accordion-jquery-ui .question:after{
+    content: '-';
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    color: #484848;
+    font-size: 24px;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1;
+    transition: all 0.4s ease;
+}
+.faq_content .accordion-jquery-ui .question.ui-state-active:after{
+    content: '+';
+    transform: rotate(-180deg);
+}
+/* faq_section css end */
+
+/* reservation_section css start */
+.reservation_section{
+    width: 100%;
+    background-image: url('../images/reservation_section_bg.png');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    padding: 72px 0 97px;
+}
+.reservation_form_box{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.10);
+    padding: 65px;
+}
+.reservation_para{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.reservation_para p{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.2;
+}
+.reservation_para p span{
+    color: #C21717;
+}
+/* reservation_section css end */
+
+/* contact_section css start */
+.contact_section{
+    width: 100%;
+    padding: 70px 0;
+}
+.contact_banner img{
+    width: 100%;
+}
+.contact_profile{
+    position: relative;
+    width: 100%;
+    padding: 105px 0 0;
+}
+.contact_profile:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 73%;
+    background-color: #EDF3F5;
+    z-index: -1;
+}
+.contact_profile_cont h4{
+    color: #70B6CF;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.contact_profile_cont h3{
+    color: #484848;
+    font-size: 50px;
+    font-family: 'Trajan Pro 3';
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: right;
+    opacity: 0.10;
+    padding-right: 50px;
+}
+.contact_profile_cont p{
+    color: #484848;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.2;
+    margin-bottom: 30px;
+}
+.contact_profile_cont p strong{
+    font-weight: 700;
+}
+.contact_location{
+    width: 100%;
+    padding: 80px 0;
+}
+.contact_location_cont{
+    padding-left: 50px;
+}
+.contact_location_cont h4{
+    color: #484848;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.contact_location_cont p{
+    color: #484848;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.3;
+}
+.contact_location_cont p strong{
+    font-weight: 700;
+    display: inline-block;
+    min-width: 90px;
+}
+.contact_location_cont p span{
+    display: inline-block;
+}
+/* contact_section css end */

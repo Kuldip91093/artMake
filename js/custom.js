@@ -34,7 +34,7 @@ $(window).on('load',function() {
 });
 
 $(document).ready(function(){
-	
+
 	// navbar toggle js
 	$('.navbar_toggler').click(function(){
 		$('body').toggleClass('no_scroll');
@@ -56,5 +56,10 @@ $(document).ready(function(){
 		$('body,html').animate({
 			scrollTop: 0,
 		}, 800);
+	});
+
+	// FAQ accordian
+	$( function() {
+		$(".accordion-jquery-ui").accordion();
 	});
 });
