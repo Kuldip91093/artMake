@@ -1,3 +1,15 @@
+.custom_text_center{
+    text-align: center;
+}
+.custom_para{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.custom_para p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+}
 /* king heading css start */
 .sketch_heading{
     width: 100%;
@@ -299,4 +311,293 @@
     width: 100%;
     padding: 78px 0 85px;
 }
+.before_after_slider{
+    margin: 65px 0 50px;
+}
+.before_after_slider .tag{
+    display: table;
+    margin: 20px auto 40px;
+    border-width: 20px 25px 0 25px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+}
+.before_after_slider .img{
+    position: relative;
+    width: calc(100% - 15px);
+    margin-left: auto;
+    border: 2px solid #76B9D0;
+}
+.before_after_slider .img img{
+    width: 100%;
+    height: 100%;
+    transform: translate(-15px, -15px);
+}
+.before_after_slider .img.img_before:after{
+    content: 'before';
+}
+.before_after_slider .img.img_after:after{
+    content: 'AFTER';
+}
+.before_after_slider .img:after{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background: linear-gradient(#52B2CD, #67D5D6);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Trajan Pro 3';
+    font-weight: 600;
+    line-height: 1;
+    padding: 9px 18px;
+}
+.before_after_bottom_content{
+    position: relative;
+    width: 100%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.10);
+    padding: 27px 56px 22px;
+}
+.before_after_bottom_content:before{
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    width: 23px;
+    height: 39px;
+    background-image: url('../images/pin_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.before_after_bottom_content p{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.4;
+}
 /* before_after_section css end */
+
+/* menu_section css start */
+.menu_section{
+    width: 100%;
+    background-color: #EDF3F5;
+}
+.menu_section_head{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    margin: 50px 0;
+}
+.menu_section_head:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 2px;
+    background-color: #484848;
+    z-index: -1;
+}
+.menu_section_head h3{
+    display: inline-block;
+    background-color: #EDF3F5;
+    color: #484848;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 0 30px;
+}
+.menu_section_layer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 45px 0;
+}
+.menu_section_layer .col_img{
+    position: relative;
+    width: 55%;
+    background-color: #FCE1CC;
+    z-index: 2;
+    transform: translate(0, -50px);
+}
+.menu_section_layer .col_img .tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -30%);
+    width: 144px;
+    height: 144px;
+    background-image: url('../images/tag_bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BCA982;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Great Vibes', cursive;
+}
+.menu_section_layer .img{
+    padding: 15px 10px 10px;
+}
+.menu_section_layer .img img{
+    margin: auto;
+}
+.menu_section_layer .img_text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #52B2CD, #67D5D6);
+    padding: 19px;
+    text-align: center;
+}
+.menu_section_layer .img_text h4{
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.menu_section_layer .col_cont{
+    position: relative;
+    width: 45%;
+    z-index: 1;
+    padding: 30px;
+}
+.menu_section_layer .col_cont:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% + 50px);
+    height: 100%;
+    z-index: -1;
+    background-color: #FFFFFF;
+}
+.menu_section_layer .col_cont h4{
+    color: #70B6CF;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.menu_section_layer .col_cont p{
+    color: #484848;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.2;
+}
+/* menu_section css end */
+
+/* price_section css start */
+.price_section{
+    width: 100%;
+    padding: 78px 0 88px;
+}
+.price_table{
+    text-align: center;
+}
+.price_table table{
+    width: 100%;
+    max-width: 1078px;
+    margin: auto;
+    border: 2px solid #70B6CF;
+    color: #484848;
+    font-size: 16px;
+    font-weight: 500;
+    border-collapse: collapse;
+    margin-bottom: 65px;
+}
+.price_table table thead th{
+    background: linear-gradient(20deg, #52B2CD, #67D5D6);
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 700;
+}
+.price_table table tbody th,
+.price_table table tbody td{
+    text-align: center;
+    border: 1px solid #CECECE;
+    padding: 15px 30px;
+}
+.price_table table tbody td:last-child{
+    text-align: right;
+}
+/* price_section css end */
+
+/* stepper_section css start */
+.stepper_section{
+    width: 100%;
+    background-color: #EDF3F5;
+    padding: 54px 0;
+}
+.stepper_item{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 865px;
+    margin: auto;
+    padding: 25px 0;
+}
+.stepper_item:after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-width: 30px 44px 0 44px;
+    border-style: solid;
+    border-color: #5EB4CE transparent transparent transparent;
+}
+.stepper_item .col_img{
+    width: 40%;
+}
+.stepper_item .col_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.stepper_item .col_cont{
+    position: relative;
+    width: 60%;
+    padding: 40px 52px;
+    background-color: #FFFFFF;
+}
+.stepper_item .col_cont .tag{
+    position: absolute;
+    bottom: -10px;
+    right: 18px;
+    color: #484848;
+    font-size: 35px;
+    font-family: 'Trajan Pro 3';
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    opacity: 0.10;
+}
+.stepper_item .col_cont .tag span{
+    font-size: 50px;
+}
+.stepper_item .col_cont h4{
+    color: #70B6CF;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.stepper_item .col_cont p{
+    color: #484848;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.2;
+}
+/* stepper_section css end */
