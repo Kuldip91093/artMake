@@ -62,4 +62,33 @@ $(document).ready(function(){
 	$( function() {
 		$(".accordion-jquery-ui").accordion();
 	});
+
+	// before after
+	var window_size = $(window).width();
+	if(window_size < 901){
+		$('.problem_contnet_slider').slick({
+			infinite: true,
+			slidesToShow: 1,
+  			slidesToScroll: 1,
+			fade: true,
+			arrows: false,
+			autoplay: true
+		});
+	}
+
+	if(window_size < 676){
+		$('.stepper_row').slick({
+			infinite: false,
+			slidesToShow: 1,
+  			slidesToScroll: 1,
+			fade: true,
+			arrows: true,
+			dots: true
+		});
+		$('.before_after_slider').slick({
+			infinite: false,
+			slidesToShow: 1,
+  			slidesToScroll: 1
+		});
+	}
 });
