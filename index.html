@@ -663,7 +663,204 @@
 					半角カタカナ、環境依存文字は文字化けの原因となりますので、使用しないでください。</p>
 				</div>
 				<form class="reservation_form">
-
+					<div class="reservation_form_group">
+						<label>診療メニュー　<span>※</span></label>
+						<div class="reservation_form_cont">
+							<div class="select_filled">
+								<select>
+									<option>ご選択ください</option>
+									<option>診療メニュー 1</option>
+									<option>診療メニュー 2</option>
+									<option>診療メニュー 3</option>
+									<option>診療メニュー 4</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label>希望日時</label>
+						<div class="reservation_form_cont">
+							<div class="reservation_form_inner_group">
+								<label>第一希望　<span>※</span></label>
+								<div class="reservation_form_inner_cont">
+									<div class="select_filled">
+										<select>
+											<option>ご選択ください</option>
+											<option>第一希望　1</option>
+											<option>第一希望　2</option>
+											<option>第一希望　3</option>
+											<option>第一希望　4</option>
+										</select>
+									</div>
+									<div class="select_filled">
+										<select>
+											<option>時間</option>
+											<option>option 1</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="reservation_form_inner_group">
+								<label>第二希望 <span>※</span></label>
+								<div class="reservation_form_inner_cont">
+									<div class="select_filled">
+										<select>
+											<option>ご選択ください</option>
+											<option>第二希望 1</option>
+											<option>第二希望 2</option>
+											<option>第二希望 3</option>
+											<option>第二希望 4</option>
+										</select>
+									</div>
+									<div class="select_filled">
+										<select>
+											<option>時間</option>
+											<option>option 1</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="reservation_form_inner_group">
+								<label>第三希望</label>
+								<div class="reservation_form_inner_cont">
+									<div class="select_filled">
+										<select>
+											<option>ご選択ください</option>
+											<option>第三希望 1</option>
+											<option>第三希望 2</option>
+											<option>第三希望 3</option>
+											<option>第三希望 4</option>
+										</select>
+									</div>
+									<div class="select_filled">
+										<select>
+											<option>時間</option>
+											<option>option 1</option>
+											<option>option 2</option>
+											<option>option 3</option>
+											<option>option 4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label>当日の治療を <br/>
+							ご希望されますか？ <span>※</span></label>
+						<div class="reservation_form_cont">
+							<div class="radio_filled">
+								<input type="radio" />
+								<span></span>
+								<p>カウンセリング希望</p>
+							</div>
+							<div class="radio_filled">
+								<input type="radio" />
+								<span></span>
+								<p>カウンセリング希望＋当日に治療も希望</p>
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label>メールアドレス <span>※</span></label>
+						<div class="reservation_form_cont">
+							<div class="input_filled">
+								<input type="text" placeholder="例) sample@kmshinjuku.com" />
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label>性別 <span>※</span></label>
+						<div class="reservation_form_cont">
+							<div class="radio_filled_flex">
+								<div class="radio_filled">
+									<input type="radio" />
+									<span></span>
+									<p>女性</p>
+								</div>
+								<div class="radio_filled">
+									<input type="radio" />
+									<span></span>
+									<p>男性</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label>お名前(フリガナ) <span>※</span></label>
+						<div class="reservation_form_cont">
+							<div class="input_filled">
+								<input type="text" placeholder="例) ヤマダ　ハナコ" />
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label>年齢 <span>※</span></label>
+						<div class="reservation_form_cont">
+							<div class="input_filled age_filled">
+								<input type="number" placeholder="例) 30" />
+								<p>歳</p>
+								<p>※未成年者の方は保護者の同意が必要です。<br/>
+								<a href="#">同意書ダウンロードはこちら</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label>電話番号 <span>※</span></label>
+						<div class="reservation_form_cont">
+							<div class="input_filled">
+								<input type="text" placeholder="例) 0120-3456-7890(携帯番号も可)" />
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label>既往歴 <span>※</span></label>
+						<div class="reservation_form_cont">
+							<div class="radio_filled_flex">
+								<div class="radio_filled">
+									<input type="radio" />
+									<span></span>
+									<p>なし</p>
+								</div>
+								<div class="radio_filled">
+									<input type="radio" />
+									<span></span>
+									<p>あり</p>
+								</div>
+							</div>
+							<div class="para">
+								<p>※ありとご回答の方はコメント欄に詳細(病歴。アレルギー等の内容)をご入力ください。</p>
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label>コメント<br/>
+						(ご相談・ご質問など) <span>※</span></label>
+						<div class="reservation_form_cont">
+							<div class="textarea_filled">
+								<textarea placeholder="お客様のお悩みや疑問などご自由にご入力ください。"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_group">
+						<label></label>
+						<div class="reservation_form_cont">
+							<div class="checkbox_filled">
+								<input type="checkbox" />
+								<span></span>
+								<p><a href="#">個人情報保護方針</a>について に同意する。</p>
+							</div>
+						</div>
+					</div>
+					<div class="reservation_form_submit">
+						<input type="submit" value="上記の内容で送信" />
+					</div>
 				</form>
 			</div>
 		</div>

@@ -769,6 +769,105 @@
 .reservation_para p span{
     color: #C21717;
 }
+.reservation_form{
+    width: 100%;
+    max-width: 705px;
+    margin: auto;
+}
+.reservation_form p{
+    color: #484848;
+    font-size: 12px;
+    font-weight: 400;
+}
+.reservation_form .para{
+    margin-top: 15px;
+}
+.reservation_form_group,
+.reservation_form_inner_group{
+    display: flex;
+    margin-bottom: 24px;
+}
+.reservation_form_group > label,
+.reservation_form_inner_group > label{
+    color: #484848;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: inline-block;
+}
+.reservation_form_group > label{
+    min-width: 200px;
+}
+.reservation_form_inner_group > label{
+    min-width: 120px;
+}
+.reservation_form_group > label span,
+.reservation_form_inner_group > label span{
+    color: #C21717;
+}
+.reservation_form_cont,
+.reservation_form_inner_cont{
+    flex: 1 0 0;
+}
+.select_filled{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.select_filled:last-child{
+    margin-bottom: 0;
+}
+.select_filled select,
+.input_filled input,
+.textarea_filled textarea{
+    width: 100%;
+    border: 1px solid #CACACA;
+    background-color: #FFFFFF;
+    padding: 11px 20px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+}
+.input_filled input::placeholder,
+.textarea_filled textarea::placeholder{
+    color: #A5A5A5;
+}
+.textarea_filled textarea{
+    line-height: 2;
+    height: 200px;
+    resize: none;
+}
+.radio_filled_flex{
+    display: flex;
+}
+.radio_filled_flex .radio_filled{
+    margin: 0 30px 0 0;
+}
+.radio_filled_flex .radio_filled:last-child{
+    margin-right: 0;
+}
+.radio_filled{
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    line-height: 1;
+}
+.radio_filled input{
+    margin-right: 15px;
+}
+.radio_filled:last-child{
+    margin-bottom: 0;
+}
+.age_filled{
+    display: flex;
+    align-items: flex-end;
+}
+.age_filled input{
+    max-width: 120px;
+}
+.age_filled p{
+    padding: 0 8px;
+}
 /* reservation_section css end */
 
 /* contact_section css start */
@@ -1389,7 +1488,27 @@
         padding: 50px 0;
     }
     .reservation_form_box{
-        padding: 30px;
+        padding: 20px;
+    }
+    .reservation_form_group{
+        flex-wrap: wrap;
+    }
+    .reservation_form_group > label{
+        min-width: auto;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .reservation_form_cont{
+        width: 100%;
+    }
+    .radio_filled input{
+        margin-right: 10px;
+    }
+    .age_filled{
+        flex-wrap: wrap;
+    }
+    .age_filled p:last-child{
+        margin-top: 5px;
     }
     .contact_profile_layer{
         flex-wrap: wrap-reverse;
