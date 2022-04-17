@@ -1563,9 +1563,6 @@ img{
     bottom: 0;
     right: 0;
     margin: auto;
-    border-width: 0 0 1px 1px;
-    border-style: solid;
-    border-color: transparent transparent #70B6CF #70B6CF;
     background-image: url('../images/icon_checked.png');
     background-repeat: no-repeat;
     background-size: contain;
