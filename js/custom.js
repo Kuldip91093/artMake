@@ -65,16 +65,6 @@ $(document).ready(function(){
 
 	// before after
 	var window_size = $(window).width();
-	if(window_size < 901){
-		$('.problem_contnet_slider').slick({
-			infinite: true,
-			slidesToShow: 1,
-  			slidesToScroll: 1,
-			fade: true,
-			arrows: false,
-			autoplay: true
-		});
-	}
 
 	if(window_size < 676){
 		$('.stepper_row').slick({
@@ -91,4 +81,15 @@ $(document).ready(function(){
   			slidesToScroll: 1
 		});
 	}
+
+	// problem contnet slider JS
+	$('.problem_contnet_slider').slick({
+			dots: false,
+			arrows: false,
+			fade: true,
+			speed: 500,
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 4000,
+		});
 });
