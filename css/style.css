@@ -1384,6 +1384,9 @@ img{
     font-weight: 400;
     line-height: 2.2;
 }
+.reservation_para p a{
+    color: #70B6CF;
+}
 .reservation_para p span{
     color: #C21717;
 }
@@ -1396,6 +1399,9 @@ img{
     color: #484848;
     font-size: 12px;
     font-weight: 400;
+}
+.reservation_form p a{
+    color: #70B6CF;
 }
 .reservation_form .para{
     margin-top: 15px;
@@ -1465,6 +1471,7 @@ img{
     margin-right: 0;
 }
 .radio_filled{
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 13px;
@@ -1472,6 +1479,42 @@ img{
 }
 .radio_filled input{
     margin-right: 15px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+}
+.radio_filled input,
+.radio_filled span{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+.radio_filled span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #484848;
+    transition: all 0.3s ease;
+}
+.radio_filled input:checked ~ span{
+    border-color: #72C9D8;
+}
+.radio_filled input:checked ~ span:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #72C9D8;
+    transition: all 0.3s ease;
 }
 .radio_filled:last-child{
     margin-bottom: 0;
@@ -1485,6 +1528,68 @@ img{
 }
 .age_filled p{
     padding: 0 8px;
+}
+.checkbox_filled{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.checkbox_filled input,
+.checkbox_filled span{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.checkbox_filled input{
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+}
+.checkbox_filled span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #CDD6DD;
+    border-radius: 4px;
+}
+.checkbox_filled input:checked ~ span:after{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: transparent transparent #70B6CF #70B6CF;
+    background-image: url('../images/icon_checked.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transition: all 0.3s ease;
+}
+.checkbox_filled p a{
+    color: #484848;
+    text-decoration: underline;
+}
+.reservation_form_submit{
+    text-align: center;
+}
+.reservation_form_submit input,
+.reservation_form_submit button{
+    display: inline-block;
+    padding: 28px 120px;
+    background: linear-gradient(to top right, #72C9D8, #53B1CC);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    outline: 0;
+    border: none;
 }
 /* reservation_section css end */
 
@@ -1674,7 +1779,7 @@ img{
         padding: 0 30px;
         margin-bottom: 15px;
     }
-    .problem_section h2:before, 
+    .problem_section h2:before,
     .problem_section h2:after {
         font-size: 36px;
         top: 5px;
@@ -2158,6 +2263,9 @@ img{
     }
     .age_filled p:last-child{
         margin-top: 5px;
+    }
+    .reservation_form_submit input, .reservation_form_submit button{
+        padding: 20px 70px;
     }
     .contact_profile_layer{
         flex-wrap: wrap-reverse;
