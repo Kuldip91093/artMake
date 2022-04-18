@@ -1341,7 +1341,7 @@ img{
     line-height: 1;
 }
 .faq_content .accordion-jquery-ui .question:after{
-    content: '-';
+    content: '+';
     position: absolute;
     top: 28px;
     right: 30px;
@@ -1349,11 +1349,10 @@ img{
     font-size: 24px;
     font-family: 'Noto Serif JP', serif;
     line-height: 1;
-    transition: all 0.4s ease;
 }
 .faq_content .accordion-jquery-ui .question.ui-state-active:after{
-    content: '+';
-    transform: rotate(-180deg);
+    content: '-';
+    right: 33px;
 }
 /* faq_section css end */
 
