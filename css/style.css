@@ -395,6 +395,7 @@ img{
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+    transition: all .3s;
 }
 .custom_navbar ul li a.contact_btn i {
     margin-right: 10px;
@@ -1478,12 +1479,17 @@ img{
 .reservation_form_inner_cont{
     flex: 1 0 0;
 }
-.select_filled{
+.select_filled {
     width: 100%;
     margin-bottom: 10px;
+    position: relative;
 }
 .select_filled:last-child{
     margin-bottom: 0;
+}
+.reservation_form_group .input_filled {
+    margin-bottom: 10px;
+    position: relative;
 }
 .select_filled select,
 .input_filled input,
@@ -1528,38 +1534,10 @@ img{
     z-index: 1;
     opacity: 0;
 }
-.radio_filled input,
-.radio_filled span{
+.radio_filled input{
     cursor: pointer;
     width: 16px;
     height: 16px;
-}
-.radio_filled span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 1px solid #484848;
-    transition: all 0.3s ease;
-}
-.radio_filled input:checked ~ span{
-    border-color: #72C9D8;
-}
-.radio_filled input:checked ~ span:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 70%;
-    height: 70%;
-    border-radius: 50%;
-    background-color: #72C9D8;
-    transition: all 0.3s ease;
 }
 .radio_filled:last-child{
     margin-bottom: 0;
@@ -1598,6 +1576,9 @@ img{
     border: 1px solid #CDD6DD;
     border-radius: 4px;
 }
+.checkbox_filled input.error + span {
+    border: 1px solid #c60c18;
+}
 .checkbox_filled input:checked ~ span:after{
     content: '';
     position: absolute;
@@ -1632,6 +1613,87 @@ img{
     line-height: 1;
     outline: 0;
     border: none;
+}
+.textarea_filled {
+    position: relative;
+}
+
+.radio_filled label {
+    padding-left: 16px;
+    color: #484848;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+}
+.radio_filled input[type="radio"] {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+.radio_filled label:before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.radio_filled input[type="radio"]:checked + label:before {
+    border: 1px solid #70b6cf;
+}
+.radio_filled label:after {
+    content: "";
+    background-color: #70B6CF;
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    left: 3.4px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    transition: all 0.5s;
+    opacity: 0;
+    border-radius: 50%;
+    border: 1px solid #70b6cf;
+}
+.radio_filled input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+span.error {
+    width: 100%;
+    background: rgba(198, 12, 24, 1);
+    position: absolute;
+    top: -23px;
+    left: 10px;
+    color: #fff;
+    min-width: 120px;
+    font-size: 13px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 6px;
+    z-index: 1;
+    max-width: 120px;
+    display: table;
+}
+span.error:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: -5px;
+    border-top: 5px solid #c60c18;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.holder_col {
+    color: #A5A5A5 !important;
+}
+.active_col {
+    color: #484848 !important;
 }
 /* reservation_section css end */
 
@@ -1725,11 +1787,29 @@ img{
     left: 0;
     right: 0;
     width: 100%;
-    padding: 15px 0;
-    background-color: #CCCCCC;
+    padding: 8px 0;
+    background-color: #fff;
     border: none;
     z-index: 99;
+    -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
 }
+.fixed_button_section_inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bttn_call_wrap {
+    flex: 0 0 30%;
+}
+.bttn_mail_wrap {
+    flex: 0 0 30%;
+}
+.bttn_line_wrap {
+    flex: 0 0 40%;
+}
+
 .fixed_button_section .bttn{
     display: flex;
     align-items: center;
@@ -1993,7 +2073,7 @@ img{
         padding-bottom: 78px;
     }
     .pagetop{
-        bottom: 93px;
+        bottom: 76px;
     }
     .banner_image{
         position: static;
@@ -2001,6 +2081,11 @@ img{
     }
     .banner_content_wrapper{
         padding: 30px 0;
+        margin-top: -200px;
+        background-image: url(../images/blue_bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .king_heading .bttn{
         font-size: 16px;
@@ -2335,6 +2420,9 @@ img{
         top: 16px;
         right: 0;
     }
+    .faq_content .accordion-jquery-ui .question.ui-state-active:after {
+        right: 3px;
+    }
     .reservation_section{
         padding: 50px 0;
     }
@@ -2387,15 +2475,11 @@ img{
     .contact_location_map{
         margin-bottom: 30px;
     }
-}
-@media (max-width: 575px){
-    .fixed_button_section .bttn{
-        border-radius: 5px;
+    .reservation_form_inner_group {
+        flex-wrap: wrap;
     }
-    .fixed_button_section .bttn i{
-        margin-right: 0;
-    }
-    .fixed_button_section .bttn span{
-        display: none;
+    .reservation_form_inner_group > label {
+        min-width: 100%;
+        margin-bottom: 10px;
     }
 }
