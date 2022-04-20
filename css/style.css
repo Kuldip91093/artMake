@@ -387,15 +387,20 @@ img{
     height: 65px;
     line-height: 65px;
     text-align: center;
-    background: rgb(114,201,216);
-    background: -moz-linear-gradient(90deg, rgba(114,201,216,1) 0%, rgba(83,177,204,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(114,201,216,1) 0%, rgba(83,177,204,1) 100%);
-    background: linear-gradient(90deg, rgba(114,201,216,1) 0%, rgba(83,177,204,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72c9d8",endColorstr="#53b1cc",GradientType=1);
+    background: rgb(103,213,214);
+    background: -moz-linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    background: linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#67d5d6",endColorstr="#005b87",GradientType=1);
+    background-size: 200% auto;
+    background-position: left center;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    transition: all .3s;
+    transition: all 0.4s;
+}
+.custom_navbar ul li a.contact_btn:hover {
+	background-position: right center;
 }
 .custom_navbar ul li a.contact_btn i {
     margin-right: 10px;
@@ -790,13 +795,23 @@ img{
 }
 .king_heading .bttn{
     display: inline-block;
-    background-color: #72C9D8;
+    background: rgb(103,213,214);
+    background: -moz-linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    background: linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#67d5d6",endColorstr="#005b87",GradientType=1);
+    background-size: 200% auto;
+    background-position: left center;
     color: #FFFFFF;
     font-size: 30px;
     font-weight: 700;
     line-height: 1;
     padding: 37px 73px;
     margin-top: 10px;
+    transition: all 0.4s;
+}
+.king_heading .bttn:hover {
+	background-position: right center;
 }
 .king_heading .bttn .fa{
     margin-left: 50px;
@@ -1606,13 +1621,24 @@ img{
 .reservation_form_submit button{
     display: inline-block;
     padding: 28px 120px;
-    background: linear-gradient(to top right, #72C9D8, #53B1CC);
+    background: rgb(103,213,214);
+    background: -moz-linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    background: linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#67d5d6",endColorstr="#005b87",GradientType=1);
+    background-size: 200% auto;
+    background-position: left center;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 700;
     line-height: 1;
     outline: 0;
     border: none;
+    transition: all 0.4s;
+}
+.reservation_form_submit input:hover,
+.reservation_form_submit button:hover {
+	background-position: right center;
 }
 .textarea_filled {
     position: relative;
