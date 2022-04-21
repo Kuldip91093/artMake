@@ -417,7 +417,7 @@
 	<section class="price_section" style="display:block">
 		<div class="custom_container">
 			<div class="regular_heading io fade upS">
-				<h2>料金<span>(税込)</span></h2>
+				<h2>料金<span class="unit">(税込)</span></h2>
 				<h6>PRICE</h6>
 			</div>
 			<div class="price_table io fade upS">
@@ -1099,7 +1099,7 @@
 			submitHandler: function (form) {
 				form.submit();
 			},
-			errorPlacement: function(error, element) 
+			errorPlacement: function(error, element)
 			{
 				if ( element.is(":radio, :checkbox")) {
 					error.appendTo( element.parents('.radio_filled, .checkbox_filled') );
