@@ -5,7 +5,8 @@
 	<title>ArtMake</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
-	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="images/favicon.png">
@@ -20,7 +21,8 @@
 			<a href="indx.html">
 				<img src="images/logo.png" alt="logo image">
 			</a>
-			<a href="javascript:void(0);" class="navbar_toggler csp" type="button" data-toggle="collapse"
+			<a href="#" class="contact_btn_sp">ご予約を無料<br>カウンセリング</a>
+			<a href="javascript:void(0);" class="navbar_toggler csp" style="display:none!important" type="button" data-toggle="collapse"
 				data-target="#collapsibleNavbar">
 				<div class="navbar_toggler_inner"></div>
 			</a>
@@ -40,7 +42,7 @@
 			</nav>
 		</div>
 	</header>
-	<section class="banner_section">
+	<section class="banner_section" style="display:block">
 		<div class="banner_image">
 			<img src="images/site-banner.jpg" />
 		</div>
@@ -55,7 +57,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="problem_section">
+	<section class="problem_section" style="display:block">
 		<div class="custom_container io fade upS">
 			<h2>こん<span>なお悩み</span>ありませんか？</h2>
 			<div class="problem_contnet_sec">
@@ -103,7 +105,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about_clinic_section">
+	<section class="about_clinic_section" style="display:block">
 		<div class="custom_container">
 			<div class="sketch_heading io fade upS">
 				<h2><span class="blue_color lg_font">医療アートメイク</span>なら<br />
@@ -130,7 +132,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about_section">
+	<section class="about_section" style="display:block">
 		<div class="custom_container">
 			<div class="regular_heading io fade upS">
 				<h2>医療アートメイクとは？</h2>
@@ -154,7 +156,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="golden_ration">
+	<section class="golden_ration" style="display:block">
 		<div class="custom_container io fade upS">
 			<div class="regular_heading">
 				<h2>黄金比から導き出す形</h2>
@@ -258,7 +260,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="before_after_section io fade upS">
+	<section class="before_after_section io fade upS" style="display:block">
 		<div class="custom_container">
 			<div class="regular_heading">
 				<h2>眉・ビフォーアフター</h2>
@@ -312,7 +314,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="menu_section">
+	<section class="menu_section" style="display:block">
 		<div class="custom_container">
 			<div class="regular_heading io fade upS">
 				<h2>メニュー</h2>
@@ -412,10 +414,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="price_section">
+	<section class="price_section" style="display:block">
 		<div class="custom_container">
 			<div class="regular_heading io fade upS">
-				<h2>料金</h2>
+				<h2>料金<span>(税込)</span></h2>
 				<h6>PRICE</h6>
 			</div>
 			<div class="price_table io fade upS">
@@ -512,7 +514,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="stepper_section io fade upS">
+	<section class="stepper_section io fade upS" style="display:block">
 		<div class="custom_container">
 			<div class="regular_heading">
 				<h2>施術の流れ</h2>
@@ -587,7 +589,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="safe_secure_section">
+	<section class="safe_secure_section" style="display:block">
 		<div class="custom_container">
 			<div class="king_heading_wrapper io fade upS">
 				<div class="king_heading">
@@ -608,14 +610,11 @@
 					<img src="images/safe_secure_img.png" />
 				</div>
 				<div class="safe_secure_para">
-					<p>アートメイクは、医師、もしくは看護師の免許を持った者<br />
-						しか施術することができません。</p>
+					<p>アートメイクは、医師、もしくは看護師の免許を持った者<br class="cpc">しか施術することができません。</p>
 
-					<p>平成13年11月8日、厚生労働省より、「針先に色素を付けながら、皮膚の表面に墨等の色素を入れる行為」は、<br />
-						医師免許を有しない者が業として行えば医師法第17条に違反する、という通知が出されています。</p>
+					<p>平成13年11月8日、厚生労働省より、「針先に色素を付けながら、皮膚の表面に墨等の色素を入れる行為」は、<br class="cpc">医師免許を有しない者が業として行えば医師法第17条に違反する、という通知が出されています。</p>
 
-					<p>KM新宿クリニックでは、しっかりと衛生管理を行い、<br />
-						医師による管理のもとで看護師が施術を行います。</p>
+					<p>KM新宿クリニックでは、しっかりと衛生管理を行い、<br class="cpc">医師による管理のもとで看護師が施術を行います。</p>
 
 					<p>直接皮膚に入れる塗料はアレルギーフリーの製品を使用しています。<br />
 						また、MRIへの影響を抑えたMRIフリーの素材でもあります。</p>
@@ -623,7 +622,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="faq_section io fade upS">
+	<section class="faq_section io fade upS" style="display:block">
 		<div class="custom_container">
 			<div class="regular_heading">
 				<h2>よくある質問</h2>
@@ -657,21 +656,21 @@
 	<section class="reservation_section">
 		<div class="custom_container">
 			<div class="regular_heading">
-				<h2>WEBで施術予約</h2>
-				<h6>CONTACT</h6>
+				<h2>クリニック案内</h2>
+				<h6>CLINIC</h6>
 			</div>
 			<div class="reservation_form_box">
 				<div class="reservation_para">
-					<p>下記項目にご入力の上、送信ボタンをクリックしてください。<br/>
+					<p>下記項目にご入力の上、<br class="csp">送信ボタンをクリックしてください。<br/>
 					<span>※</span>は必須項目です。<br/>
-					半角カタカナ、環境依存文字は文字化けの原因となりますので、使用しないでください。</p>
+					半角カタカナ、環境依存文字は文字化けの原因となりますので、<br class="csp">使用しないでください。</p>
 				</div>
-				<form class="reservation_form">
+				<form class="reservation_form" method="post" action="https://www.kmshinjuku.com/form/confirm.php">
 					<div class="reservation_form_group">
 						<label>診療メニュー　<span>※</span></label>
 						<div class="reservation_form_cont">
 							<div class="select_filled">
-								<select name="medical" onchange="this.className=this.options[this.selectedIndex].className">
+								<select name="menu" onchange="this.className=this.options[this.selectedIndex].className">
 									<option class="holder_col" value="" selected disabled>ご選択ください</option>
 									<option value="アートメイクモニター 眉">【モニター】眉</option>
 									<option value="アートメイクモニター アイライン上">【モニター】アイライン上</option>
@@ -689,10 +688,11 @@
 								<label>第一希望　<span>※</span></label>
 								<div class="reservation_form_inner_cont">
 									<div class="input_filled">
-										<input type="text" id="datepicker" name="hopef" placeholder="2022/04/22">
+										<input type="hidden" name="time0102" value="">
+										<input type="text" class="datepicker" name="date01" placeholder="2022/04/22" readonly>
 									</div>
 									<div class="select_filled">
-										<select name="hopes" onchange="this.className=this.options[this.selectedIndex].className">
+										<select name="time01" onchange="this.className=this.options[this.selectedIndex].className">
 											<option class="holder_col" value="" selected disabled>時間</option>
 											<option value="11:00">11:00</option>
 											<option value="11:30">11:30</option>
@@ -718,10 +718,11 @@
 								<label>第二希望 <span>※</span></label>
 								<div class="reservation_form_inner_cont">
 									<div class="input_filled">
-										<input type="text" id="datepicker1" name="hopet" placeholder="2022/04/22">
+										<input type="hidden" name="time0202" value="">
+										<input type="text" class="datepicker" name="date02" placeholder="2022/04/22" readonly>
 									</div>
 									<div class="select_filled">
-										<select name="hopefo" onchange="this.className=this.options[this.selectedIndex].className">
+										<select name="time02" onchange="this.className=this.options[this.selectedIndex].className">
 											<option class="holder_col" value="" selected disabled>時間</option>
 											<option value="11:00">11:00</option>
 											<option value="11:30">11:30</option>
@@ -747,10 +748,11 @@
 								<label>第三希望</label>
 								<div class="reservation_form_inner_cont">
 									<div class="input_filled">
-										<input type="text" id="datepicker2" name="hopefif" placeholder="2022/04/22">
+										<input type="hidden" name="time0302" value="">
+										<input type="text" class="datepicker" name="date03" placeholder="2022/04/22" readonly>
 									</div>
 									<div class="select_filled">
-										<select name="hopesi" onchange="this.className=this.options[this.selectedIndex].className">
+										<select name="time03" onchange="this.className=this.options[this.selectedIndex].className">
 											<option class="holder_col" value="" selected disabled>時間</option>
 											<option value="11:00">11:00</option>
 											<option value="11:30">11:30</option>
@@ -779,11 +781,11 @@
 							ご希望されますか？ <span>※</span></label>
 						<div class="reservation_form_cont">
 							<div class="radio_filled">
-								<input type="radio" name="treatment" id="treatment_a" value="カウンセリング希望">
+								<input type="radio" name="todayCnsl" id="treatment_a" value="カウンセリング希望">
 								<label for="treatment_a">カウンセリング希望</label>
 							</div>
 							<div class="radio_filled">
-								<input type="radio" name="treatment" id="treatment_b" value="当日に治療も希望">
+								<input type="radio" name="todayCnsl" id="treatment_b" value="当日に治療も希望">
 								<label for="treatment_b">カウンセリング希望＋当日に治療も希望</label>
 							</div>
 						</div>
@@ -792,7 +794,7 @@
 						<label>メールアドレス <span>※</span></label>
 						<div class="reservation_form_cont">
 							<div class="input_filled">
-								<input type="text" placeholder="例) sample@kmshinjuku.com" name="address">
+								<input type="email" name="email" placeholder="例) sample@kmshinjuku.com">
 							</div>
 						</div>
 					</div>
@@ -801,11 +803,11 @@
 						<div class="reservation_form_cont">
 							<div class="radio_filled_flex">
 								<div class="radio_filled">
-									<input type="radio" name="gender" id="gender_a" value="女性">
+									<input type="radio" name="sex" id="gender_a" value="女性">
 									<label for="gender_a">女性</label>
 								</div>
 								<div class="radio_filled">
-									<input type="radio" name="gender" id="gender_b" value="男性">
+									<input type="radio" name="sex" id="gender_b" value="男性">
 									<label for="gender_b">男性</label>
 								</div>
 							</div>
@@ -815,7 +817,7 @@
 						<label>お名前(フリガナ) <span>※</span></label>
 						<div class="reservation_form_cont">
 							<div class="input_filled">
-								<input type="text" placeholder="例) ヤマダ　ハナコ" name="name" />
+								<input type="text" placeholder="例) ヤマダ　ハナコ" name="furigana" />
 							</div>
 						</div>
 					</div>
@@ -826,7 +828,7 @@
 								<input type="number" placeholder="例) 30" name="age"/>
 								<p>歳</p>
 								<p>※未成年者の方は保護者の同意が必要です。<br/>
-								<a href="#">同意書ダウンロードはこちら</a></p>
+								<a target="_blank" href="https://www.kmshinjuku.com/pdf/consent.pdf">同意書ダウンロードはこちら</a></p>
 							</div>
 						</div>
 					</div>
@@ -834,7 +836,7 @@
 						<label>電話番号 <span>※</span></label>
 						<div class="reservation_form_cont">
 							<div class="input_filled">
-								<input type="text" placeholder="例) 0120-3456-7890(携帯番号も可)" name="telephone" />
+								<input type="text" placeholder="例) 0120-3456-7890(携帯番号も可)" name="tel" />
 							</div>
 						</div>
 					</div>
@@ -843,11 +845,11 @@
 						<div class="reservation_form_cont">
 							<div class="radio_filled_flex">
 								<div class="radio_filled">
-									<input type="radio" name="past" id="past_a" value="なし">
+									<input type="radio" name="goclinicrec" id="past_a" value="なし">
 									<label for="past_a">なし</label>
 								</div>
 								<div class="radio_filled">
-									<input type="radio" name="past" id="past_b" value="あり">
+									<input type="radio" name="goclinicrec" id="past_b" value="あり">
 									<label for="past_b">あり</label>
 								</div>
 							</div>
@@ -861,7 +863,7 @@
 						(ご相談・ご質問など) <span>※</span></label>
 						<div class="reservation_form_cont">
 							<div class="textarea_filled">
-								<textarea name="comment" placeholder="お客様のお悩みや疑問などご自由にご入力ください。"></textarea>
+								<textarea name="textarea" placeholder="お客様のお悩みや疑問などご自由にご入力ください。"></textarea>
 							</div>
 						</div>
 					</div>
@@ -869,12 +871,13 @@
 						<label></label>
 						<div class="reservation_form_cont">
 							<div class="checkbox_filled">
-								<input type="checkbox" name="policy"/>
-								<span></span>
-								<p><a href="#">個人情報保護方針</a>について に同意する。</p>
+								<input type="checkbox" name="privacypolicy" id="privacypolicy" value="個人情報保護方針">
+								<label for="privacypolicy"><a target="_blank" href="https://www.kmshinjuku.com/privacy/">個人情報保護方針</a>について に同意する。</label>
 							</div>
 						</div>
 					</div>
+					<input type="hidden" name="pageurl" value="<?php echo (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>">
+      				<input type="hidden" name="formcode" value="bK9CEQgv">
 					<div class="reservation_form_submit">
 						<input type="submit" value="上記の内容で送信" />
 					</div>
@@ -919,7 +922,7 @@
 			<div class="custom_container">
 				<div class="custom_row contact_location_layer">
 					<div class="custom_col_6 contact_location_map io fade upS">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6480.489605652848!2d139.703323!3d35.695593!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa7e8d6a9296b574!2zU0hFUklFIENMSU5JQ--8iOOCt-OCp-ODquODvOOCr-ODquODi-ODg-OCr--8ieaWsOWuv-mZog!5e0!3m2!1sja!2s!4v1650440270561!5m2!1sja!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6480.324234149994!2d139.700598!3d35.697628!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb61b3f7315a4d5b6!2zS03mlrDlrr_jgq_jg6rjg4vjg4Pjgq8!5e0!3m2!1sja!2s!4v1650528474596!5m2!1sja!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 					<div class="custom_col_6 contact_location_cont io fade upS">
 						<h4>KM新宿クリニック</h4>
@@ -955,116 +958,141 @@
 	<div class="pagetop"><a href="javascript:void(0)"><i class="fas fa-chevron-up"></i></a></div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
-	<!-- <script src="js/additional-methods.min.js"></script> -->
-	<script src="js/jquery-ui.js"></script>
+	<script src="js/additional-methods.min.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+
 	<script src="js/slick.min.js"></script>
 	<script src="js/fonts-awesome-5.js"></script>
 	<script src="js/intersection-observer-polyfill.js"></script>
 	<script src="js/custom.js"></script>
 	<script type="text/javascript">
-		$( "#datepicker" ).datepicker();
-		$( "#datepicker1" ).datepicker();
-		$( "#datepicker2" ).datepicker();
+		var dateToday = new Date();
+		$( ".datepicker" ).datepicker({
+			minDate: dateToday,
+			monthNames: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+			dayNamesMin: ["日","月","火","水","木","金","土"],
+			beforeShowDay: function(day) {
+				var day = day.getDay();
+				if (day == 4 || day == 1) {
+					return [false, ""]
+				} else {
+					return [true, ""]
+				}
+			}
+		}).on("change",function(){
+			$(this).valid();
+		});
 
 		$('.reservation_form').validate({
 			errorElement: "span",
 			rules: {
-				medical: {
+				menu: {
 					required: true
 				},
-				treatment: {
+				todayCnsl: {
 					required: true
 				},
-				hopef: {
+				date01: {
 					required: true
 				},
-				hopes: {
+				time01: {
 					required: true
 				},
-				hopet: {
+				date02: {
 					required: true
 				},
-				hopefo: {
+				time02: {
 					required: true
 				},
-				hopefif: {
+				date03: {
 					required: true
 				},
-				hopesi: {
+				time03: {
 					required: true
 				},
-				address: {
+				email: {
+					required: true,
+					email: true
+				},
+				sex: {
 					required: true
 				},
-				gender: {
-					required: true
-				},
-				name: {
+				furigana: {
 					required: true
 				},
 				age: {
 					required: true
 				},
-				telephone: {
+				tel: {
+					required: true,
+					number: true,
+					minlength: 10,
+					maxlength: 10,
+					phoneUS: true
+				},
+				goclinicrec: {
 					required: true
 				},
-				past: {
+				textarea: {
 					required: true
 				},
-				comment: {
-					required: true
-				},
-				policy: {
+				privacypolicy: {
 					required: true
 				},
 			},
 			messages:{
-				medical: {
+				menu: {
 					required: "必須入力です"
 				},
-				treatment: {
+				todayCnsl: {
 					required: "必須入力です"
 				},
-				hopef: {
+				date01: {
 					required: "必須入力です"
 				},
-				hopes: {
+				time01: {
 					required: "必須入力です"
 				},
-				hopet: {
+				date02: {
 					required: "必須入力です"
 				},
-				hopefo: {
+				time02: {
 					required: "必須入力です"
 				},
-				hopefif: {
+				date03: {
 					required: "必須入力です"
 				},
-				hopesi: {
+				time03: {
 					required: "必須入力です"
 				},
-				address: {
+				email: {
+					required: "必須入力です",
+					email: "メールアドレスではありません"
+				},
+				sex: {
 					required: "必須入力です"
 				},
-				gender: {
-					required: "必須入力です"
-				},
-				name: {
+				furigana: {
 					required: "必須入力です"
 				},
 				age: {
 					required: "必須入力です"
 				},
-				telephone: {
+				tel: {
+					required: "必須入力です",
+					number: "電話番号ではありません",
+					minlength: "電話番号ではありません",
+					maxlength: "電話番号ではありません",
+					phoneUS: "電話番号ではありません"
+				},
+				goclinicrec: {
 					required: "必須入力です"
 				},
-				past: {
+				textarea: {
 					required: "必須入力です"
 				},
-				comment: {
-					required: "必須入力です"
-				},
-				policy: {
+				privacypolicy: {
 					required: "必須入力です"
 				},
 			},
@@ -1074,7 +1102,7 @@
 			errorPlacement: function(error, element) 
 			{
 				if ( element.is(":radio, :checkbox")) {
-					error.appendTo( element.parents('.radio_filled') );
+					error.appendTo( element.parents('.radio_filled, .checkbox_filled') );
 				}else {
 					error.insertAfter( element );
 				}

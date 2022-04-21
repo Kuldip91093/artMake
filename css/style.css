@@ -399,7 +399,28 @@ img{
     font-weight: 500;
     transition: all 0.4s;
 }
+.site_header a.contact_btn_sp {
+    display: none;
+    height: 65px;
+    line-height: 1.5;
+    text-align: center;
+    background: rgb(103,213,214);
+    background: -moz-linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    background: linear-gradient(90deg, rgba(103,213,214,1) 0%, rgba(82,178,205,1) 50%, rgba(0,91,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#67d5d6",endColorstr="#005b87",GradientType=1);
+    background-size: 200% auto;
+    background-position: left center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.4s;
+    padding: 10px 10px;
+}
 .custom_navbar ul li a.contact_btn:hover {
+	background-position: right center;
+}
+.site_header a.contact_btn_sp:hover {
 	background-position: right center;
 }
 .custom_navbar ul li a.contact_btn i {
@@ -542,7 +563,7 @@ img{
     background-size: 100% 100%;
     background-position: center;
     padding: 12px 30px;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     color: #fff;
 }
@@ -554,7 +575,7 @@ img{
     background-size: 100% 100%;
     background-position: center;
     padding: 12px 30px;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     color: #fff;
 }
@@ -1403,18 +1424,18 @@ img{
     line-height: 1;
 }
 .faq_content .accordion-jquery-ui .question:after{
-    content: '+';
+    content: '-';
     position: absolute;
     top: 28px;
-    right: 30px;
+    right: 33px;
     color: #484848;
     font-size: 24px;
     font-family: 'Noto Serif JP', serif;
     line-height: 1;
 }
 .faq_content .accordion-jquery-ui .question.ui-state-active:after{
-    content: '-';
-    right: 33px;
+    content: '+';
+    right: 30px;
 }
 /* faq_section css end */
 
@@ -1517,6 +1538,13 @@ img{
     font-size: 13px;
     font-weight: 400;
     line-height: 1;
+    -webkit-appearance: none;
+}
+.select_filled select {
+    background-image: url(../images/down_arrow.svg);
+    background-position: right 0px center;
+    background-size: 35px;
+    background-repeat: no-repeat;
 }
 .input_filled input::placeholder,
 .textarea_filled textarea::placeholder{
@@ -1640,6 +1668,22 @@ img{
 .reservation_form_submit button:hover {
 	background-position: right center;
 }
+.reservation_form_submit.confirm_value {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+.reservation_form_submit.confirm_value input[type="button"] {
+    background: #777;
+    padding: 28px 50px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.reservation_form_submit.confirm_value input[type="button"]:hover {
+    background: #aaa;
+}
 .textarea_filled {
     position: relative;
 }
@@ -1677,9 +1721,9 @@ img{
     content: "";
     background-color: #70B6CF;
     position: absolute;
-    height: 9px;
-    width: 9px;
-    left: 3.4px;
+    height: 8px;
+    width: 8px;
+    left: 4px;
     top: 0px;
     bottom: 0px;
     margin: auto;
@@ -1695,7 +1739,7 @@ span.error {
     width: 100%;
     background: rgba(198, 12, 24, 1);
     position: absolute;
-    top: -23px;
+    top: -32px;
     left: 10px;
     color: #fff;
     min-width: 120px;
@@ -1705,6 +1749,8 @@ span.error {
     z-index: 1;
     max-width: 120px;
     display: table;
+    height: 28px;
+    line-height: 22px;
 }
 span.error:after {
     content: '';
@@ -1720,6 +1766,66 @@ span.error:after {
 }
 .active_col {
     color: #484848 !important;
+}
+.checkbox_filled input[type="checkbox"] {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+.checkbox_filled label a, .checkbox_filled label {
+    padding-left: 50px;
+    color: #484848 !important;
+    font-size: 12px;
+    font-weight: 400;
+    display: table;
+    margin: 15px 0;
+    width: auto;
+    position: relative;
+}
+.checkbox_filled label a {
+    display: inline-block;
+    padding: 0;
+    text-decoration: underline;
+}
+.checkbox_filled label:before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    border: 1px solid #CDD6DD;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+.checkbox_filled input[type="checkbox"]:checked + label:before {
+    border-color: #70B6CF;
+}
+.checkbox_filled label:after {
+    content: "";
+    border-width: 0px 0px 2px 2px;
+    border-style: solid;
+    border-color: #70B6CF;
+    position: absolute;
+    height: 7px;
+    width: 16px;
+    left: 7px;
+    top: 17px;
+    margin: auto;
+    transition: all 0.5s;
+    opacity: 0;
+    border-radius: 0px;
+    transform: rotate(-45deg);
+}
+.checkbox_filled input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+.checkbox_filled span.error {
+    top: -10px;
 }
 /* reservation_section css end */
 
@@ -1862,6 +1968,15 @@ span.error:after {
     margin-right: 15px;
     font-size: 18px;
 }
+.confirm_value {
+    border-bottom: solid 1px #ccc;
+}
+.send_result {
+    max-width: 750px;
+    margin: auto;
+    padding: 40px 16px;
+    min-height: 100vh;
+}
 /* bottom fixed section css end */
 
 @media (max-width: 1199px){
@@ -1955,6 +2070,9 @@ span.error:after {
     }
     .regular_heading h2{
         font-size: 24px;
+    }
+    .regular_heading h2 span {
+        font-size: 20px;
     }
     .regular_heading h6{
         font-size: 16px;
@@ -2093,10 +2211,19 @@ span.error:after {
     .contact_location_cont p{
         line-height: 2;
     }
+    .problem_contnet_text .problem_contnet_text_inner {
+        height: 140px;
+        width: 210px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 110% 120%;
+    }
 }
 @media (max-width: 675px){
     body{
-        padding-bottom: 78px;
+        padding-bottom: 64px;
     }
     .pagetop{
         bottom: 76px;
@@ -2444,10 +2571,10 @@ span.error:after {
     }
     .faq_content .accordion-jquery-ui .question:after{
         top: 16px;
-        right: 0;
+        right: 3px;
     }
     .faq_content .accordion-jquery-ui .question.ui-state-active:after {
-        right: 3px;
+        right: 0px;
     }
     .reservation_section{
         padding: 50px 0;
@@ -2478,6 +2605,9 @@ span.error:after {
     .reservation_form_submit input, .reservation_form_submit button{
         padding: 20px 70px;
     }
+    .reservation_form_submit.confirm_value input[type="button"] {
+        padding: 20px 30px;
+    }
     .contact_profile_layer{
         flex-wrap: wrap-reverse;
     }
@@ -2507,5 +2637,23 @@ span.error:after {
     .reservation_form_inner_group > label {
         min-width: 100%;
         margin-bottom: 10px;
+    }
+    .problem_section {
+        padding-bottom: 30px;
+    }
+    .about_clinic_wrapper p {
+        text-align: center;
+    }
+    .about_clinic_section .king_heading_wrapper {
+        padding: 20px 0 60px;
+    }
+    .king_heading h2 .text_shadow_font {
+        text-shadow: none;
+    }
+    .golden_ration_points:before {
+        height: calc(100% - 124px);
+    }
+    .site_header a.contact_btn_sp {
+        display: block;
     }
 }

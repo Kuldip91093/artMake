@@ -68,7 +68,7 @@ $(document).ready(function () {
 
 	if (window_size < 676) {
 		$('.stepper_row').slick({
-			infinite: false,
+			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			fade: true,
@@ -76,7 +76,7 @@ $(document).ready(function () {
 			dots: true
 		});
 		$('.before_after_slider').slick({
-			infinite: false,
+			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1
 		});
@@ -90,6 +90,6 @@ $(document).ready(function () {
 		speed: 500,
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 4000,
+		autoplaySpeed: 150000,
 	});
 });
